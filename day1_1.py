@@ -5,7 +5,7 @@ input_list = []
 
 test_list= [-68,-30, 48,-5,60, -55,-1,-99,14,-82]
 
-with open("input-day1-1.txt", "r") as file:
+with open("./inputs/input-day1.txt", "r") as file:
     for line in file.readlines():
         digits = int(re.findall("\d+", line)[0])
         if "L" in line:
