@@ -41,11 +41,11 @@ for item in input_list:
             break
         else:
             # el digito de menor ocurrencia es la pista para saber el numero maximo de ocurrencias de patrones. 
-            least_ocurrencet=min(dict.values())
+            least_occurrent=min(dict.values())
             print(least_occurrent)
-            pattern_qty=(len(number_str)) / least_occurrent
+            pattern_qty=int((len(number_str)) / least_occurrent)
             regex = fr"\d{pattern_qty}"
-            print(regex)
+            print(re.findall(regex,number_str))
             
                     
     
